@@ -76,6 +76,6 @@ run_analysis <- function() {
 			}
 	summaryData <- cbind(participantVector,activityVector,measurementVector,averageVector)
 	colnames(summaryData) <- c("Participant","Activity","Measurement","Average")
-	write.table(summaryData,"./summaryData.txt",col.names=TRUE)
+	write.table(summaryData,"./summaryData.txt",col.names=TRUE,row.names=FALSE)
 	summaryData
 }
